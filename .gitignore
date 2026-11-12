@@ -1,0 +1,19 @@
+# secrets
+.env.glabs
+.env
+*.key
+
+# generated media / project output
+output/
+YouTube/
+*.mp4
+*.mov
+*.mkv
+*.mka
+*.wav
+edit/
+logs/
+
+# OS
+Thumbs.db
+desktop.ini

@@ -1,0 +1,61 @@
+{
+  "_comment": "Harvest & Cook preset (SKILL §17). Copy to OUTPUT_ROOT/<slug>/project/bible.json, replace every <...>, then build with build_storyboard.ps1. Keep species/crops realistic for the chosen region and season.",
+  "preset": "harvest-cook",
+  "original_title": "<English title>",
+  "slug": "<kebab-case-slug>",
+  "target_duration_seconds": 1320,
+  "fps": 24,
+  "max_frames_per_shot": 144,
+  "min_frames_per_shot": 36,
+  "broll_target": [0.35, 0.45],
+  "character_choice": "claude_proposes",
+  "location": "<region, country, season - e.g. Swiss Alpine village, late summer>",
+  "model_id": "meta_muse",
+  "quality_choice": "FULL_HD",
+  "style": "Photorealistic documentary-style footage of a peaceful countryside farm, 16:9 landscape, no text, no logo, no watermark.",
+  "look": "Bright soft daylight under a light overcast sky, high-key and airy, pastel tones, fresh saturated greens, ripe produce with rich true-to-life colour, flowers in foreground and background. Real skin texture with pores, visible fabric weave and wood grain, subtle film grain, natural imperfections; looks like a real camera, not AI.",
+  "camera_lock": "Locked-off tripod shot at eye level: the camera does not move, pan, zoom or drift; the background and props stay in exactly the same position for the whole clip.",
+  "no_speech": "No speaking, mouths remain neutral unless eating or breathing, no dialogue, no voiceover, no captions, no lyrics, no singing.",
+  "motion_rule": "Real-time natural pacing, one clear physical action, stable camera, natural motion blur, no floaty movement.",
+  "negative_base": "speech, talking, lip-sync, voices, singing, subtitles, captions, text, logo, watermark, extra fingers, missing fingers, fused hands, extra limbs, distorted face, morphing objects, objects appearing or disappearing, floating objects, hands passing through objects, fast unnatural motion, dark gloomy lighting",
+  "main_setting": "<one-paragraph fixed geography: cottage, garden rows, orchard, spring trough, path, mountains/valley - same in every exterior shot>",
+  "subjects": {
+    "G": { "id": "char_girl", "role": "main", "lock": "<young woman: age, hair, face; fixed outfit e.g. white puff-sleeve blouse and light-blue midi skirt>",
+      "variants": { "apron": "<same woman wearing an apron for cooking>" } },
+    "N": { "id": "char_grandma", "role": "supporting", "lock": "<grandmother: headscarf colour, cardigan, apron>" },
+    "O": { "id": "char_grandpa", "role": "supporting", "lock": "<grandfather: beard, flat cap or hat, waistcoat, shirt>" },
+    "D": { "id": "pet_mascot", "role": "pet", "lock": "<series mascot animal that follows the girl - your own choice, realistic breed>" },
+    "HX": { "id": "loc_cottage", "role": "environment", "lock": "<cottage exterior with flower boxes, bench, outdoor table>" },
+    "P": { "id": "loc_garden", "role": "environment", "lock": "<vegetable rows / orchard / meadow around the cottage>" },
+    "HI": { "id": "loc_kitchen", "role": "environment", "lock": "<outdoor or indoor kitchen corner where the dishes are made>" }
+  },
+  "props": [
+    { "id": "prop_signature", "match": "wheelbarrow|cart", "lock": "<series signature prop in one pastel colour, e.g. a light-blue wooden wheelbarrow, no text or decals>" },
+    { "id": "prop_vehicle", "match": "truck|wagon|cart ride", "lock": "<optional signature vehicle, plain pastel paint, no logos>" }
+  ],
+  "reference_images": [
+    { "id": "loc_master", "kind": "location_ref", "role": "main_setting", "prompt": "Master establishing photograph of the main setting, wide view: {MAIN}. Bright soft daylight, no people, no text." },
+    { "id": "char_girl", "kind": "character_ref", "prompt": "Full-body photographic character reference, front view, in a sunny garden: {G}. Neutral calm expression, no text." },
+    { "id": "char_girl_portrait", "kind": "character_ref", "derive_from": "char_girl", "prompt": "Head-and-shoulders portrait reference of the same woman: {G}. Soft daylight, gentle smile, no text." },
+    { "id": "char_grandma", "kind": "character_ref", "prompt": "Full-body photographic character reference: {N}. Soft daylight, gentle expression, no text." },
+    { "id": "char_grandpa", "kind": "character_ref", "prompt": "Full-body photographic character reference: {O}. Soft daylight, calm expression, no text." },
+    { "id": "pet_mascot", "kind": "character_ref", "prompt": "Photographic full-body reference of {D}, sitting on grass, natural daylight, no text." },
+    { "id": "loc_cottage", "kind": "location_ref", "derive_from": "loc_master", "prompt": "Eye-level photograph of the cottage: {HX}. Same place as the master, bright daylight, no people, no text." },
+    { "id": "loc_garden", "kind": "location_ref", "derive_from": "loc_master", "prompt": "Photograph of the garden beside the same cottage: {P}. Bright daylight, no people, no text." },
+    { "id": "loc_kitchen", "kind": "location_ref", "derive_from": "loc_cottage", "prompt": "Photograph of the kitchen corner of the same cottage: {HI}. Bright daylight, no people, no text." },
+    { "id": "prop_signature", "kind": "prop_ref", "derive_from": "loc_garden", "prompt": "Photographic prop reference: {prop_signature}. In the same garden, no people, no text." }
+  ],
+  "thumbnail": {
+    "image_prompt": "Photorealistic 16:9 thumbnail: {G} smiling with a basket of the most colourful harvest of the episode, the mascot beside her, the cottage and flowers behind, bright soft daylight, crisp foreground, no text, no logo.",
+    "width": 1280,
+    "height": 720,
+    "text_overlay_enabled": false
+  },
+  "seo": {
+    "title_en": "<English SEO title, max 100 chars>",
+    "alternative_title_en": "<optional>",
+    "description_en": "<2-4 paragraphs: crops harvested, dishes made, no talking ASMR, light CTA>",
+    "tags_en": ["slow living", "countryside life", "harvest", "cooking", "no talking", "asmr"],
+    "hashtags_en": ["#SlowLiving", "#CountrysideLife", "#Harvest", "#ASMR"]
+  }
+}

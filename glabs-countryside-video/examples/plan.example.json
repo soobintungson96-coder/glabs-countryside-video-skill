@@ -1,0 +1,413 @@
+{
+  "schema_version": "3.4",
+  "original_title": "Cuộc Sống Yên Bình Tuyệt Đẹp Ở Nông Thôn Châu Âu",
+  "preflight_configuration": {
+    "target_duration_seconds": 60,
+    "character_choice": "claude_proposes",
+    "location": "Small European countryside village in spring morning",
+    "model_id": "REPLACE_WITH_VERIFIED_GLABS_MODEL_ID",
+    "quality_choice": "FULL_HD",
+    "output_folder": "OUTPUT_ROOT/peaceful-european-countryside"
+  },
+  "production": {
+    "fps": 30,
+    "total_frames": 1800,
+    "resolution": "1920x1080",
+    "aspect_ratio": "16:9",
+    "cut_style": "hard_cut",
+    "watermark_enabled": false,
+    "subtitles_enabled": false
+  },
+  "characters": [
+    {
+      "id": "woman_01",
+      "role": "main",
+      "appearance_lock": "An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture.",
+      "reference_image_prompt": "Full-body natural photographic reference, An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. Neutral daylight, front view, realistic body proportions, no text.",
+      "asset_uri": null
+    },
+    {
+      "id": "cat_01",
+      "role": "pet",
+      "appearance_lock": "A calico cat with white, black and orange fur patches, amber eyes, normal feline proportions.",
+      "reference_image_prompt": "Photorealistic full-body reference, A calico cat with white, black and orange fur patches, amber eyes, normal feline proportions. Calm neutral sitting pose, natural lighting, no text.",
+      "asset_uri": null
+    },
+    {
+      "id": "location_01",
+      "role": "environment",
+      "appearance_lock": "Spring in a small European countryside village, stone cottage, vegetable garden, rolling green hills, morning sun.",
+      "reference_image_prompt": "Landscape reference photograph of rustic stone cottage, vegetable patch and rolling green European hills in spring daylight. Consistent architecture and plants, no text.",
+      "asset_uri": null
+    }
+  ],
+  "shots": [
+    {
+      "id": "scene_001",
+      "order": 1,
+      "scene_type": "BROLL",
+      "duration_frames": 150,
+      "purpose": "Establish the village at dawn",
+      "continuity_before": "Morning starts in the same village",
+      "continuity_after": "A spring morning outside the stone cottage",
+      "subjects": [],
+      "reference_ids": [
+        "location_01"
+      ],
+      "shot_size": "WIDE",
+      "camera_motion": "locked_off",
+      "image_prompt": "Wide view of a small rural European village and rolling green hills, delicate wisps of morning mist and a stone cottage at the edge of the vegetable garden. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "A few leaves drift gently and a thin layer of morning mist moves slowly across the distant meadow. Camera perfectly stable. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "moving buildings, unnatural fast clouds, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Distant birds chirping, soft morning breeze. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "landscape temporal consistency"
+      ]
+    },
+    {
+      "id": "scene_002",
+      "order": 2,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Prepare basket on cottage porch",
+      "continuity_before": "Basket is resting on a wooden bench",
+      "continuity_after": "Woman holds the empty wicker basket ready for gardening",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "MEDIUM",
+      "camera_motion": "locked_off",
+      "image_prompt": "An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. She stands beside a wooden bench outside the stone cottage with one empty wicker basket at hand. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "She reaches for the handle of the empty wicker basket on the bench and lifts it in one controlled, natural action. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "floating basket, broken wrist, missing fingers, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Subtle basket creaking and gentle footsteps on stone. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "hand grip",
+        "basket position"
+      ]
+    },
+    {
+      "id": "scene_003",
+      "order": 3,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Harvest one tomato",
+      "continuity_before": "Woman has entered garden with basket",
+      "continuity_after": "A single tomato detached from its stem",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. Close view of her right hand poised on the green stem of a ripe red tomato still attached to the vine. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "Her thumb and forefinger pinch the green stem, detach one ripe tomato and lift it steadily; plant and fruit keep their original shapes. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "extra fingers, fruit duplicating, stem bending unnaturally, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Gentle stem snap and leaves rustling. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "hand anatomy",
+        "fruit morphology"
+      ]
+    },
+    {
+      "id": "scene_004",
+      "order": 4,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Place harvested tomato in basket",
+      "continuity_before": "One ripe detached tomato in the woman's hand",
+      "continuity_after": "Tomato settled amongst already harvested tomatoes in basket",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "Close view of the same wicker basket containing several natural ripe tomatoes. An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. Her hand holds one detached tomato above the basket. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "Her hand lowers the tomato into the basket, releases it after contact and draws away with natural weight and timing. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "tomato passing through wicker, floating tomato, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Soft contact of tomato against wicker and other fruit. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "item count",
+        "gravity"
+      ]
+    },
+    {
+      "id": "scene_005",
+      "order": 5,
+      "scene_type": "BROLL",
+      "duration_frames": 150,
+      "purpose": "Observe spring garden wildlife",
+      "continuity_before": "Garden remains sunlit and quiet",
+      "continuity_after": "Garden ambience continues before returning to task",
+      "subjects": [],
+      "reference_ids": [
+        "location_01"
+      ],
+      "shot_size": "MACRO",
+      "camera_motion": "locked_off",
+      "image_prompt": "Macro photograph of a small bumblebee on a wild blossom bordering the vegetable garden, realistic wings and pollen, soft sunlit background. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "The bee shifts around the flower and gently flexes its wings without changing shape. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "fused bee wings, extra wings, extreme slow motion, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Soft natural insect buzz and garden birds. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "insect anatomy",
+        "species plausibility"
+      ]
+    },
+    {
+      "id": "scene_006",
+      "order": 6,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Carry the harvested produce home",
+      "continuity_before": "The basket contains harvested tomatoes",
+      "continuity_after": "Basket placed on sturdy kitchen table",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "MEDIUM",
+      "camera_motion": "slow_dolly_in",
+      "image_prompt": "An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. She is beside a solid wooden table outside the cottage kitchen holding the wicker basket full of the same red tomatoes. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "She carefully sets the basket onto the wooden table with both hands, lets its base make full contact, then releases the handles. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "basket passes through table, tomatoes spill upward, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Natural wicker creak and soft wooden contact. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "object placement",
+        "basket consistency"
+      ]
+    },
+    {
+      "id": "scene_007",
+      "order": 7,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Wash tomatoes",
+      "continuity_before": "Several harvested tomatoes on kitchen table",
+      "continuity_after": "Tomatoes wet and ready for preparation",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "Close angle on a glazed ceramic bowl containing clean water and ripe tomatoes on a wooden table, with the same woman's hands at the water surface. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "Both hands gently swirl the already submerged tomatoes once, producing realistic ripples contained inside the bowl. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "water moving upward, bowl melting, finger fusion, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Gentle water sloshing and soft ceramic contact. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "water physics",
+        "hands"
+      ]
+    },
+    {
+      "id": "scene_008",
+      "order": 8,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Transfer chopped tomato ingredients to pan",
+      "continuity_before": "Tomatoes have been washed and some already sliced between shots",
+      "continuity_after": "Chopped tomatoes present in pan, prepared for cooking",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "A rustic kitchen with a shallow cast iron pan on a cool stove and a wooden cutting board holding pre-sliced tomato wedges. The woman is poised to slide several already-sliced wedges into the pan. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "She slides the already-sliced tomato wedges from the board into the pan in a single simple movement, without magically chopping or generating new pieces. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "knife passing through hand, teleporting fruit, pan morphing, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Light cutting board scrape and soft food contact against pan. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "ingredient state",
+        "pan placement"
+      ]
+    },
+    {
+      "id": "scene_009",
+      "order": 9,
+      "scene_type": "BROLL",
+      "duration_frames": 150,
+      "purpose": "Relaxed cat at kitchen doorway",
+      "continuity_before": "Kitchen sunlight falls toward the doorway",
+      "continuity_after": "Kitchen ambience continues with simmering soon to begin",
+      "subjects": [
+        "cat_01"
+      ],
+      "reference_ids": [
+        "cat_01",
+        "location_01"
+      ],
+      "shot_size": "MEDIUM",
+      "camera_motion": "locked_off",
+      "image_prompt": "A calico cat with white, black and orange fur patches, amber eyes, normal feline proportions. The cat sits calmly on the farmhouse kitchen threshold by a small planter, with natural sidelight and green foliage outside. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "The cat slowly turns its head toward the window and flicks one ear, body remaining stable. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "dog-like paws, warped fur pattern, extra tails, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Quiet garden ambience, gentle cat breathing and distant birds. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "cat identity",
+        "cat anatomy"
+      ]
+    },
+    {
+      "id": "scene_010",
+      "order": 10,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Stir tomato sauce",
+      "continuity_before": "The tomato pieces have cooked and formed sauce between shots",
+      "continuity_after": "Sauce evenly stirred and lightly steaming",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "Close view of a cast iron pan containing visibly simmering chunky tomato sauce and a wooden spoon held by the woman, rustic stone cottage kitchen. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "The spoon makes one slow circular stir through simmering tomato sauce, steam rising naturally without flames. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "boiling out of pan, spoon disappearing, unnatural fire, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Gentle sauce simmer, wooden spoon contacting iron pan. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "sauce texture",
+        "hand placement"
+      ]
+    },
+    {
+      "id": "scene_011",
+      "order": 11,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Serve prepared pasta",
+      "continuity_before": "Cooked pasta is already plated; sauce is ready",
+      "continuity_after": "Pasta plate neatly finished with spoonful of tomato sauce",
+      "subjects": [
+        "woman_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "location_01"
+      ],
+      "shot_size": "CLOSE",
+      "camera_motion": "locked_off",
+      "image_prompt": "A rustic ceramic plate of cooked pasta on the kitchen table. The woman holds a spoon filled with cooked tomato sauce directly above the pasta. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "She gently places one spoonful of tomato sauce onto the cooked pasta and withdraws the spoon naturally. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "food teleporting, spoon melting, giant food portions, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Soft ceramic clink and natural wet sauce contact. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "food plausibility",
+        "spoon continuity"
+      ]
+    },
+    {
+      "id": "scene_012",
+      "order": 12,
+      "scene_type": "MAIN",
+      "duration_frames": 150,
+      "purpose": "Peaceful closing with finished meal",
+      "continuity_before": "The cooked pasta has been served",
+      "continuity_after": "Character rests peacefully beside the completed meal",
+      "subjects": [
+        "woman_01",
+        "cat_01"
+      ],
+      "reference_ids": [
+        "woman_01",
+        "cat_01",
+        "location_01"
+      ],
+      "shot_size": "MEDIUM",
+      "camera_motion": "locked_off",
+      "image_prompt": "An adult woman with dark brown hair tied in a low bun, beige linen blouse, olive green apron and dark trousers, natural skin texture. She sits quietly at the cottage terrace table with the finished pasta plate while the same calico cat rests in a nearby sunlit spot. A quiet spring morning in a small rural European village, stone cottage, vegetable garden, flowering hedgerows, realistic daylight, natural skin, authentic rustic textures, clean photography, no text, no logo, no watermark.",
+      "video_prompt": "She calmly looks toward the garden and raises a ceramic cup slightly, then rests it gently on the table; the cat remains relaxed. No mouth movement suggesting speech. Movement must be real-time and naturally paced. No speech, no talking, no lip-sync, no captions, no vocal music.",
+      "negative_prompt": "talking lips, dancing cat, extra fingers, objects floating, extra limbs, morphing, disappearing objects, distorted anatomy, synthetic CGI, speech, voices, lyrics, subtitles, watermarks",
+      "audio_prompt": "Warm garden breeze, birds, faint cup touching wooden table; soft licensed instrumental music. No speech, no human voices, no sung vocals.",
+      "qc_risks": [
+        "character identity",
+        "cat identity",
+        "no mouth speech"
+      ]
+    }
+  ],
+  "audio_policy": {
+    "dialogue_enabled": false,
+    "voiceover_enabled": false,
+    "singing_lyrics_enabled": false,
+    "speech_in_background_enabled": false,
+    "ambient_asmr_enabled": true,
+    "instrumental_music_only": true,
+    "music_license_required": true
+  },
+  "thumbnail": {
+    "image_prompt": "Photorealistic cinematic 16:9 horizontal thumbnail: the same adult woman in beige linen blouse and olive green apron, carrying a basket of red tomatoes next to a charming European stone cottage with garden, spring sun, clear foreground and realistic depth, authentic film still, no lettering, logo or watermark.",
+    "width": 1280,
+    "height": 720,
+    "text_overlay_enabled": false
+  },
+  "seo": {
+    "title_en": "Peaceful Morning in the European Countryside | Harvesting Tomatoes and Cozy Cottage Cooking",
+    "alternative_title_en": "A Quiet Day in the European Countryside | Garden Harvest and Relaxing Cooking ASMR",
+    "description_en": "Enjoy a peaceful morning in the European countryside. A woman harvests ripe tomatoes, cooks a simple home meal and enjoys a quiet spring garden. This no-talking nature ASMR video features realistic countryside ambience, calming kitchen sounds and soft instrumental music.",
+    "tags_en": [
+      "peaceful countryside",
+      "European countryside",
+      "slow living",
+      "countryside cooking",
+      "tomato harvest",
+      "cottage life",
+      "no talking ASMR",
+      "nature sounds",
+      "garden to table",
+      "rural lifestyle",
+      "relaxing farm life",
+      "cooking ASMR"
+    ],
+    "hashtags_en": [
+      "#CountrysideLife",
+      "#SlowLiving",
+      "#NoTalkingASMR",
+      "#CottageLife",
+      "#RuralLife"
+    ]
+  },
+  "deliverables": {
+    "video": "video/final_video.mp4",
+    "thumbnail": "thumbnail/thumbnail.jpg",
+    "seo": "seo/SEO.txt",
+    "storyboard": "project/storyboard.json",
+    "job_manifest": "project/job_manifest.json"
+  },
+  "approvals": {
+    "configuration_approved": true,
+    "storyboard_approved": false,
+    "execution_approved": false
+  },
+  "provider": {
+    "provider": "glabs_studio",
+    "adapter_status": "UNVERIFIED",
+    "render_kind": "UNCONFIRMED"
+  },
+  "history_reference": "project_history/episodes.json"
+}

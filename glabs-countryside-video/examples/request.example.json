@@ -1,0 +1,14 @@
+{
+  "original_title": "Cuộc Sống Yên Bình Tuyệt Đẹp Ở Nông Thôn Châu Âu",
+  "preflight_configuration": {
+    "target_duration_seconds": 60,
+    "character_choice": "claude_proposes",
+    "characters_requested": [],
+    "location": "A small countryside village in Europe, spring morning",
+    "glabs_model_id": "REPLACE_WITH_VERIFIED_GLABS_MODEL_ID",
+    "quality_choice": "FULL_HD",
+    "output_folder": "OUTPUT_ROOT/peaceful-european-countryside"
+  },
+  "user_approved_configuration": false,
+  "user_approved_execution": false
+}

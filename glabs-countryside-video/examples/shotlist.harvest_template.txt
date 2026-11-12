@@ -1,0 +1,29 @@
+# Harvest & Cook template (preset §17) - copy, replace <CROP>/<DISH>/<ANIMAL>, keep geography/season realistic.
+# TYPE|SEC|ACT|SIZE|CAMERA|SUBJECTS|ACTION|SOUND[|FIXED_ID]
+# Subjects: G=young woman (main) N=grandma O=grandpa D=mascot pet ... locations per bible.json
+#
+# --- HOOK (30-60 s, 1.5-2 s per shot): best-looking frames of the whole episode ---
+BROLL|2|H0 Hook|Extreme wide|static|P|sunrise over the green valley with the farm cottage small in the frame|soft wind, birds
+BROLL|2|H0 Hook|Close|static|P|two baby <ANIMAL> nestled together among flowers by the cottage wall|tiny rustle
+BROLL|2|H0 Hook|Medium|static|HX|water pouring from a wooden spring pipe into a mossy trough, flowers around|running water
+MAIN|2|H0 Hook|Medium|static|G,HX|the young woman smiles as she steps out of the cottage with an empty basket|door creak, birds
+#
+# --- SEGMENT: harvest <CROP> -> make <DISH>  (6-step grammar, girl works alone; grandparents do other jobs) ---
+BROLL|5|S1 <CROP>|Wide|static|P|rows of ripe <CROP> plants in the garden, mountains and village behind|birds, light wind
+MAIN|5|S1 <CROP>|Wide|very slow pan right|G,D,P|the young woman walks along the garden rows pushing a pastel wheelbarrow, the pet trotting beside her|wheel creak, footsteps
+MAIN|5|S1 <CROP>|Medium|static|G,P|she picks a ripe <CROP>, looks at it and smiles|leaf rustle, soft snap
+MAIN|4|S1 <CROP>|Close|static|G|her hands place the <CROP> gently into the wheelbarrow|fruit settling
+BROLL|4|S1 <CROP>|Macro|static|P|glistening ripe <CROP> on the plant, drops of dew|soft drip
+BROLL|5|S1 <CROP>|Close|static|P|a small local <ANIMAL> nibbling a fallen <CROP> on the ground|nibbling
+MAIN|5|S1 <CROP>|Medium|static|O,P|meanwhile grandpa digs in another bed with a spade (his own task)|spade in soil
+BROLL|4|S1 <CROP>|Close|static|P|bees on flowers between the rows|bee buzz
+MAIN|5|S1 <CROP>|Close|static|G|the wheelbarrow is now full of <CROP>|fruit tumbling
+MAIN|6|S1 <CROP>|Medium|static|N,HX|grandma washes the <CROP> under the spring pipe at the trough|running water
+MAIN|5|S1 <CROP>|Close|static|N|grandma's hands cut / press / grate the <CROP> for the <DISH>|ingredient sounds
+BROLL|4|S1 <CROP>|Close|static|HX|kittens watching curiously from a flower pot|soft mew-free rustle
+MAIN|6|S1 <CROP>|Medium|static|G,N,O,HX|at the garden table the girl pours, grandma serves the <DISH>, grandpa tastes and smiles - each a different gesture|cups, plates
+#
+# --- ENDING montage ---
+MAIN|5|E9 Ending|Medium|static|N,O,HX|grandpa offers grandma a spoon of the dessert, she laughs softly|spoon on plate
+BROLL|5|E9 Ending|Wide|static|HX|the wooden cottage with flower boxes in warm late light|birds
+BROLL|5|E9 Ending|Close|static|D,HX|the pet and farm animals eating from bowls in the garden|eating sounds
